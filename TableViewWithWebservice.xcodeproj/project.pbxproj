@@ -15,6 +15,8 @@
 		A05A4C01224359BF006D188C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A05A4BFF224359BF006D188C /* LaunchScreen.storyboard */; };
 		A05A4C0C224359BF006D188C /* TableViewWithWebserviceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05A4C0B224359BF006D188C /* TableViewWithWebserviceTests.swift */; };
 		A05A4C17224359BF006D188C /* TableViewWithWebserviceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05A4C16224359BF006D188C /* TableViewWithWebserviceUITests.swift */; };
+		A05A4C2922435AFA006D188C /* MarvelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05A4C2822435AFA006D188C /* MarvelModel.swift */; };
+		A05A4C2B22435B93006D188C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05A4C2A22435B93006D188C /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		A05A4C12224359BF006D188C /* TableViewWithWebserviceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewWithWebserviceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A05A4C16224359BF006D188C /* TableViewWithWebserviceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewWithWebserviceUITests.swift; sourceTree = "<group>"; };
 		A05A4C18224359BF006D188C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A05A4C2822435AFA006D188C /* MarvelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelModel.swift; sourceTree = "<group>"; };
+		A05A4C2A22435B93006D188C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +103,11 @@
 		A05A4BF2224359BD006D188C /* TableViewWithWebservice */ = {
 			isa = PBXGroup;
 			children = (
+				A05A4C2722435A0A006D188C /* ViewControllers */,
+				A05A4C26224359FF006D188C /* Utils */,
+				A05A4C25224359F4006D188C /* ViewModels */,
+				A05A4C24224359E5006D188C /* Models */,
 				A05A4BF3224359BD006D188C /* AppDelegate.swift */,
-				A05A4BF5224359BD006D188C /* ViewController.swift */,
 				A05A4BF7224359BD006D188C /* Main.storyboard */,
 				A05A4BFD224359BF006D188C /* Assets.xcassets */,
 				A05A4BFF224359BF006D188C /* LaunchScreen.storyboard */,
@@ -126,6 +133,37 @@
 				A05A4C18224359BF006D188C /* Info.plist */,
 			);
 			path = TableViewWithWebserviceUITests;
+			sourceTree = "<group>";
+		};
+		A05A4C24224359E5006D188C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A05A4C2822435AFA006D188C /* MarvelModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A05A4C25224359F4006D188C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A05A4C26224359FF006D188C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A05A4C2A22435B93006D188C /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A05A4C2722435A0A006D188C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A05A4BF5224359BD006D188C /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +297,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A05A4C2B22435B93006D188C /* Constants.swift in Sources */,
+				A05A4C2922435AFA006D188C /* MarvelModel.swift in Sources */,
 				A05A4BFC224359BD006D188C /* TableViewWithWebservice.xcdatamodeld in Sources */,
 				A05A4BF6224359BD006D188C /* ViewController.swift in Sources */,
 				A05A4BF4224359BD006D188C /* AppDelegate.swift in Sources */,
