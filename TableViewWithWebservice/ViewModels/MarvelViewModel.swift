@@ -10,7 +10,7 @@ import Foundation
 
 class MarvelViewModel {
     
-    let marvelModels: [String] = []
+    let marvelModels: [MarvelModel] = []
     
-    
+   
 }

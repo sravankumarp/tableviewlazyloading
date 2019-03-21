@@ -15,4 +15,10 @@ struct MarvelModel {
     let publisher: String
     let imageURL: String
     let bio: String
+    
+//    init(name: String, realName: String, team: String, firstAppearance: Int64, createdBy: String, publisher: String, imageURL: String, bio: String) {
+//    init() {
+//        self.name = Constants.name;
+//        self.realName = Constants.realName;
+//    }
 }
