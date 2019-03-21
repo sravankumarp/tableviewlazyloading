@@ -1,5 +1,5 @@
 //
-//  Constants.swift
+//  MarvelViewModel.swift
 //  TableViewWithWebservice
 //
 //  Created by Sravan on 21/03/19.
@@ -8,8 +8,9 @@
 
 import Foundation
 
-struct Constants {
-    static let name = "Name"
-    static let realName = "Real Name"
+class MarvelViewModel {
+    
+    let marvelModels: [String] = []
+    
     
 }
