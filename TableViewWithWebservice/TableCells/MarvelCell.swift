@@ -17,4 +17,12 @@ class MarvelCell: UITableViewCell {
     @IBAction func btnShowTapped(_ sender: Any) {
         print("button tapped")
     }
+    
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
 }

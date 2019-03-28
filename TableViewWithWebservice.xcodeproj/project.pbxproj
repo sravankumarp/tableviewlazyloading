@@ -19,6 +19,8 @@
 		A05A4C2B22435B93006D188C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05A4C2A22435B93006D188C /* Constants.swift */; };
 		A05A4C2D22436052006D188C /* MarvelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05A4C2C22436052006D188C /* MarvelViewModel.swift */; };
 		A05A4C302243632A006D188C /* MarvelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05A4C2F2243632A006D188C /* MarvelCell.swift */; };
+		A05A4C3222437297006D188C /* MarvelCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05A4C3122437297006D188C /* MarvelCellViewModel.swift */; };
+		A05A4C3422438EB2006D188C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05A4C3322438EB2006D188C /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		A05A4C2A22435B93006D188C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A05A4C2C22436052006D188C /* MarvelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelViewModel.swift; sourceTree = "<group>"; };
 		A05A4C2F2243632A006D188C /* MarvelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCell.swift; sourceTree = "<group>"; };
+		A05A4C3122437297006D188C /* MarvelCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCellViewModel.swift; sourceTree = "<group>"; };
+		A05A4C3322438EB2006D188C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				A05A4C2C22436052006D188C /* MarvelViewModel.swift */,
+				A05A4C3122437297006D188C /* MarvelCellViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -160,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				A05A4C2A22435B93006D188C /* Constants.swift */,
+				A05A4C3322438EB2006D188C /* NetworkManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -311,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A05A4C3422438EB2006D188C /* NetworkManager.swift in Sources */,
 				A05A4C2B22435B93006D188C /* Constants.swift in Sources */,
 				A05A4C302243632A006D188C /* MarvelCell.swift in Sources */,
 				A05A4C2922435AFA006D188C /* MarvelModel.swift in Sources */,
@@ -318,6 +325,7 @@
 				A05A4BF6224359BD006D188C /* ViewController.swift in Sources */,
 				A05A4BF4224359BD006D188C /* AppDelegate.swift in Sources */,
 				A05A4C2D22436052006D188C /* MarvelViewModel.swift in Sources */,
+				A05A4C3222437297006D188C /* MarvelCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

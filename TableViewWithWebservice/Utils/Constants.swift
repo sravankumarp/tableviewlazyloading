@@ -12,4 +12,5 @@ struct Constants {
     static let name = "Name"
     static let realName = "Real Name"
     
+    static let URL_API = "https://simplifiedcoding.net/demos/marvel/"
 }
