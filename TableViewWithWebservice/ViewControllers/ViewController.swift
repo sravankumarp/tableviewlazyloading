@@ -13,11 +13,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var tblMarvelHeros: UITableView!
 //    let marvelViewModel: MarvelViewModel
     var marvelHeros: [MarvelModel] = [MarvelModel]()
+    var selectedHeroImage: UIImage = UIImage()
+    let defaultImage: UIImage = UIImage(imageLiteralResourceName: "avatar")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        NotificationCenter.default.addObserver(self, selector: #selector(buttonTapped), name: NSNotification.Name(rawValue: Constants.notification_ButtonTapped), object: nil)
+    
+    
         let networkManager = NetworkManager()
         networkManager.getRequest(responseHandler: { (jsonResponse) in
             self.marvelHeros = jsonResponse
@@ -40,7 +44,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             cell.lblName.text = aHero.name
             
             //Set default image
-            cell.imageView?.image = UIImage(imageLiteralResourceName: "avatar")
+            cell.imgIcon?.image = defaultImage
             
             //Lazy load images
             DispatchQueue.global().async {
@@ -49,9 +53,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 guard let imageData = try? Data.init(contentsOf: imageURL) else { return }
                 guard let aHeroImage = UIImage.init(data: imageData) else { return }
                 
+                self.selectedHeroImage = aHeroImage
+                
                 DispatchQueue.main.async {
-                    cell.imageView?.image = aHeroImage
-                    cell.imageView?.contentMode = .scaleAspectFit
+                    cell.imgIcon?.image = aHeroImage
                 }
             }
             return cell
@@ -64,5 +69,21 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return 66
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedCell: MarvelCell = tableView.cellForRow(at: indexPath) as! MarvelCell
+        self.selectedHeroImage = selectedCell.imgIcon.image ?? defaultImage
+        
+        //TODO: Remove this. 
+        self.buttonTapped()
+    }
 }
 
+extension ViewController {
+    @objc func buttonTapped() {
+        print("Button tapped here")
+        
+        let profileController = ProfileImageViewController()
+        profileController.selectedHeroImage = self.selectedHeroImage
+        self.present(profileController, animated: true, completion: nil)
+    }
+}

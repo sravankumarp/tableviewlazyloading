@@ -21,6 +21,7 @@
 		A05A4C302243632A006D188C /* MarvelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05A4C2F2243632A006D188C /* MarvelCell.swift */; };
 		A05A4C3222437297006D188C /* MarvelCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05A4C3122437297006D188C /* MarvelCellViewModel.swift */; };
 		A05A4C3422438EB2006D188C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05A4C3322438EB2006D188C /* NetworkManager.swift */; };
+		A05A4C54224D454A006D188C /* ProfileImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05A4C53224D454A006D188C /* ProfileImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		A05A4C2F2243632A006D188C /* MarvelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCell.swift; sourceTree = "<group>"; };
 		A05A4C3122437297006D188C /* MarvelCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCellViewModel.swift; sourceTree = "<group>"; };
 		A05A4C3322438EB2006D188C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A05A4C53224D454A006D188C /* ProfileImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileImageViewController.swift; path = TableViewWithWebservice/ViewControllers/ProfileImageViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				A05A4C2A22435B93006D188C /* Constants.swift */,
+				A05A4C53224D454A006D188C /* ProfileImageViewController.swift */,
 				A05A4C3322438EB2006D188C /* NetworkManager.swift */,
 			);
 			path = Utils;
@@ -254,13 +257,16 @@
 				TargetAttributes = {
 					A05A4BEF224359BD006D188C = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					A05A4C06224359BF006D188C = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = A05A4BEF224359BD006D188C;
 					};
 					A05A4C11224359BF006D188C = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = A05A4BEF224359BD006D188C;
 					};
 				};
@@ -319,6 +325,7 @@
 			files = (
 				A05A4C3422438EB2006D188C /* NetworkManager.swift in Sources */,
 				A05A4C2B22435B93006D188C /* Constants.swift in Sources */,
+				A05A4C54224D454A006D188C /* ProfileImageViewController.swift in Sources */,
 				A05A4C302243632A006D188C /* MarvelCell.swift in Sources */,
 				A05A4C2922435AFA006D188C /* MarvelModel.swift in Sources */,
 				A05A4BFC224359BD006D188C /* TableViewWithWebservice.xcdatamodeld in Sources */,
@@ -508,7 +515,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sravan.TableViewWithWebservice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -525,7 +532,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sravan.TableViewWithWebservice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -544,7 +551,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sravan.TableViewWithWebserviceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TableViewWithWebservice.app/TableViewWithWebservice";
 			};
@@ -564,7 +571,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sravan.TableViewWithWebserviceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TableViewWithWebservice.app/TableViewWithWebservice";
 			};
@@ -583,7 +590,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sravan.TableViewWithWebserviceUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TableViewWithWebservice;
 			};
@@ -602,7 +609,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sravan.TableViewWithWebserviceUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TableViewWithWebservice;
 			};

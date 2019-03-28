@@ -13,4 +13,6 @@ struct Constants {
     static let realName = "Real Name"
     
     static let URL_API = "https://simplifiedcoding.net/demos/marvel/"
+    
+    static let notification_ButtonTapped = "ButtonTappedNotification"
 }

@@ -15,7 +15,7 @@ class MarvelCell: UITableViewCell {
     @IBOutlet weak var btnShow: UIButton!
     
     @IBAction func btnShowTapped(_ sender: Any) {
-        print("button tapped")
+        NotificationCenter.default.post(Notification.init(name: Notification.Name(rawValue: Constants.notification_ButtonTapped)))
     }
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
